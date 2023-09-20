@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-center">
-      <div className="bg-[#000929] w-full -mt-10 relative z-10">
+      <div className="bg-[#040813] w-full -mt-10 relative z-50">
         <div className="flex items-center justify-between w-10/12 h-10 m-auto sm:w-7/12">
           <div className="flex flex-row  gap-3 justify-center items-center">
             <img src="/footer_logo.png" className="w-14 h-2" alt="logo" />

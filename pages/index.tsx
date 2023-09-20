@@ -385,8 +385,8 @@ export default function Home() {
   return (
     <HeaderFooter>
       <main className="flex flex-col justify-center">
-        {/* <ThreeScene /> */}
-        {/* <Particles
+        <ThreeScene />
+        <Particles
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
@@ -942,7 +942,7 @@ export default function Home() {
               },
             },
           }}
-        /> */}
+        />
         <div className=" fixed left-0 top-0 bottom-0 right-0 opacity-40 -z-10 bg-gradient-to-b from-[#18203d] to-[#030348]"></div>
         <div className="pt-14 pb-24 sm:pt-28 sm:pb-48 text-center text-white ">
           <h1 className=" font-[GT-America-Extended-Black] uppercase text-5xl sm:text-8xl drop-shadow py-8">
@@ -1056,7 +1056,10 @@ export default function Home() {
           </ul>
         </div>
 
-        <div id="projects" className="pb-10 sm:pb-20 mt-0 sm:mt-16 text-center overflow-hidden">
+        <div
+          id="projects"
+          className="pb-10 sm:pb-20 mt-0 sm:mt-16 text-center overflow-hidden"
+        >
           <h1 className=" font-[GT-America-Bold]  text-4xl sm:text-6xl text-white drop-shadow-md uppercase">
             Project Case
           </h1>
@@ -1068,11 +1071,11 @@ export default function Home() {
             <div className="w-10/12 sm:w-4/12 mx-auto h-96 sm:h-auto">
               <Swiper
                 effect={"cards"}
-                grabCursor={true}
                 loop={true}
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
+                  pauseOnMouseEnter: false,
                 }}
                 thumbs={{
                   swiper:
@@ -1086,7 +1089,7 @@ export default function Home() {
                 {project.map((el, index) => (
                   <SwiperSlide
                     key={index}
-                    className="w-full rounded-2xl relative  bg-transparent"
+                    className="w-full rounded-2xl relative  bg-transparent swiper-slide-transform"
                     style={{ height: "100% !important" }}
                   >
                     <img src={el.img} className="h-full w-full object-cover" />
@@ -1103,7 +1106,10 @@ export default function Home() {
               </Swiper>
             </div>
             <div className="w-10/12 m-auto sm:w-6/12 text-left text-white mt-6 sm:mt-0">
-              <Swiper className="w-full" onSwiper={setThumbsSwiper}>
+              <Swiper
+                className="w-full"
+                onSwiper={setThumbsSwiper}
+              >
                 {project.map((el, index) => (
                   <SwiperSlide key={index} className="">
                     <h1 className="font-[GT-America-Compressed-Medium] text-4xl  text-left">

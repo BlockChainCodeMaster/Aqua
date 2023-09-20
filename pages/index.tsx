@@ -130,7 +130,8 @@ const ThreeScene: React.FC = () => {
       };
 
       const render = () => {
-        (material.uniforms.time.value = 0.001 * 10),
+        (material.uniforms.time.value = 1),
+          // (material.uniforms.time.value = 0.001 * 10),
           renderer.render(scene, camera),
           window.requestAnimationFrame(render.bind(this));
       };
@@ -994,7 +995,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          id="mission"
+          id="version"
           className="flex-co flex-col-reverse sm:flex-row flex w-10/12 gap-2 justify-between text-white mx-auto mb-10 sm:my-20"
         >
           <div className="w-full sm:w-7/12 rounded-lg drop-shadow overflow-hidden ">
@@ -1064,7 +1065,7 @@ export default function Home() {
           can achieve.
         </h2> */}
           <div className=" w-10/12 sm:w-8/12 mx-auto flex  flex-col sm:flex-row justify-between my-4 sm:my-20">
-            <div className="w-10/12 sm:w-4/12 mx-auto h-96">
+            <div className="w-10/12 sm:w-4/12 mx-auto h-96 sm:h-auto">
               <Swiper
                 effect={"cards"}
                 grabCursor={true}

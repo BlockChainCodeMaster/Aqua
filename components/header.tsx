@@ -14,13 +14,14 @@ export default function Header() {
       href: "/#mission",
     },
     {
+      name: "Our Version",
+      href: "/#version",
+    },
+    {
       name: "Why Us",
       href: "/#why_us",
     },
-    {
-      name: "Our Revenue",
-      href: "/#revenue",
-    },
+
     {
       name: "Project Case",
       href: "/#projects",

@@ -8,7 +8,7 @@ import gsap from "gsap";
 import HeaderFooter from "../components/HeaderFooter"
 import NumberScroller from "number-scroller";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCards, Thumbs } from "swiper/modules";
+import { Autoplay, EffectCards, Thumbs, EffectCreative } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -362,6 +362,11 @@ export default function Home() {
     },
   ]);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  const [showProject, setShowProject] = useState(false);
+
+
   const particlesInit = useCallback(async (engine: Engine) => {
     // console.log(engine);
 
@@ -380,6 +385,21 @@ export default function Home() {
   );
 
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+
+  useEffect(() => {
+    console.log("useEffect");
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      setIsMobile(true);
+      setShowProject(true)
+    } else {
+      setIsMobile(false);
+      setShowProject(true);
+    }
+  }, []);
 
 
   return (
@@ -1056,7 +1076,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div
+        {showProject && <div
           id="projects"
           className="pb-10 sm:pb-20 mt-0 sm:mt-16 text-center overflow-hidden"
         >
@@ -1070,12 +1090,12 @@ export default function Home() {
           <div className=" w-10/12 sm:w-8/12 mx-auto flex  flex-col sm:flex-row justify-between my-4 sm:my-20">
             <div className="w-10/12 sm:w-4/12 mx-auto h-96 sm:h-auto">
               <Swiper
-                effect={"cards"}
+                // effect={"cards"}
+                cssMode={isMobile}
                 loop={true}
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
-                  pauseOnMouseEnter: false,
                 }}
                 thumbs={{
                   swiper:
@@ -1083,14 +1103,13 @@ export default function Home() {
                       ? thumbsSwiper
                       : null,
                 }}
-                modules={[EffectCards, Autoplay, Thumbs]}
-                className="!h-full w-full  bg-transparent"
+                modules={[Autoplay, Thumbs]}
+                className="!h-full w-full  bg-transparent rounded-xl"
               >
                 {project.map((el, index) => (
                   <SwiperSlide
                     key={index}
-                    className="w-full rounded-2xl relative  bg-transparent swiper-slide-transform"
-                    style={{ height: "100% !important" }}
+                    className="w-full rounded-2xl relative  bg-transparent h-96"
                   >
                     <img src={el.img} className="h-full w-full object-cover" />
                     <h1
@@ -1106,10 +1125,7 @@ export default function Home() {
               </Swiper>
             </div>
             <div className="w-10/12 m-auto sm:w-6/12 text-left text-white mt-6 sm:mt-0">
-              <Swiper
-                className="w-full"
-                onSwiper={setThumbsSwiper}
-              >
+              <Swiper className="w-full" onSwiper={setThumbsSwiper}>
                 {project.map((el, index) => (
                   <SwiperSlide key={index} className="">
                     <h1 className="font-[GT-America-Compressed-Medium] text-4xl  text-left">
@@ -1145,7 +1161,7 @@ export default function Home() {
               </Swiper>
             </div>
           </div>
-        </div>
+        </div>}
       </main>
     </HeaderFooter>
   );

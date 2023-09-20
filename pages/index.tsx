@@ -386,7 +386,7 @@ export default function Home() {
     <HeaderFooter>
       <main className="flex flex-col justify-center">
         {/* <ThreeScene /> */}
-        <Particles
+        {/* <Particles
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
@@ -942,7 +942,7 @@ export default function Home() {
               },
             },
           }}
-        />
+        /> */}
         <div className=" fixed left-0 top-0 bottom-0 right-0 opacity-40 -z-10 bg-gradient-to-b from-[#18203d] to-[#030348]"></div>
         <div className="pt-14 pb-24 sm:pt-28 sm:pb-48 text-center text-white ">
           <h1 className=" font-[GT-America-Extended-Black] uppercase text-5xl sm:text-8xl drop-shadow py-8">

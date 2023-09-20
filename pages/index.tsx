@@ -1129,7 +1129,11 @@ export default function Home() {
                 </Swiper>
               </div>
               <div className="w-10/12 m-auto sm:w-6/12 text-left text-white mt-6 sm:mt-0">
-                <Swiper className="w-full" onSwiper={setThumbsSwiper}>
+                <Swiper
+                  className="w-full"
+                  onSwiper={setThumbsSwiper}
+                  allowTouchMove={false}
+                >
                   {project.map((el, index) => (
                     <SwiperSlide key={index} className="">
                       <h1 className="font-[GT-America-Compressed-Medium] text-4xl  text-left">

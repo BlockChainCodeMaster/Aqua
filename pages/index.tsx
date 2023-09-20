@@ -385,7 +385,7 @@ export default function Home() {
   return (
     <HeaderFooter>
       <main className="flex flex-col justify-center">
-        <ThreeScene />
+        {/* <ThreeScene /> */}
         <Particles
           id="tsparticles"
           init={particlesInit}

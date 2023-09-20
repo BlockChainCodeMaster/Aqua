@@ -1076,92 +1076,97 @@ export default function Home() {
           </ul>
         </div>
 
-        {showProject && <div
-          id="projects"
-          className="pb-10 sm:pb-20 mt-0 sm:mt-16 text-center overflow-hidden"
-        >
-          <h1 className=" font-[GT-America-Bold]  text-4xl sm:text-6xl text-white drop-shadow-md uppercase">
-            Project Case
-          </h1>
-          {/* <h2 className="text-sm text-white opacity-50">
+        {showProject && (
+          <div
+            id="projects"
+            className="pb-10 sm:pb-20 mt-0 sm:mt-16 text-center overflow-hidden"
+          >
+            <h1 className=" font-[GT-America-Bold]  text-4xl sm:text-6xl text-white drop-shadow-md uppercase">
+              Project Case
+            </h1>
+            {/* <h2 className="text-sm text-white opacity-50">
           Spline is constantly growing just like the possibilities of what you
           can achieve.
         </h2> */}
-          <div className=" w-10/12 sm:w-8/12 mx-auto flex  flex-col sm:flex-row justify-between my-4 sm:my-20">
-            <div className="w-10/12 sm:w-4/12 mx-auto h-96 sm:h-auto">
-              <Swiper
-                // effect={"cards"}
-                cssMode={isMobile}
-                loop={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                thumbs={{
-                  swiper:
-                    thumbsSwiper && !thumbsSwiper.destroyed
-                      ? thumbsSwiper
-                      : null,
-                }}
-                modules={[Autoplay, Thumbs]}
-                className="!h-full w-full  bg-transparent rounded-xl"
-              >
-                {project.map((el, index) => (
-                  <SwiperSlide
-                    key={index}
-                    className="w-full rounded-2xl relative  bg-transparent h-96"
-                  >
-                    <img src={el.img} className="h-full w-full object-cover" />
-                    <h1
-                      className="font-[GT-America-Compressed-Medium] absolute text-white  text-center  left-0 right-0 bottom-0 text-4xl drop-shadow 
+            <div className=" w-10/12 sm:w-8/12 mx-auto flex  flex-col sm:flex-row justify-between my-4 sm:my-20">
+              <div className="w-10/12 sm:w-4/12 mx-auto h-96 sm:h-auto">
+                <Swiper
+                  // effect={"cards"}
+                  cssMode={isMobile}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  thumbs={{
+                    swiper:
+                      thumbsSwiper && !thumbsSwiper.destroyed
+                        ? thumbsSwiper
+                        : null,
+                  }}
+                  modules={[Autoplay, Thumbs]}
+                  className="!h-full w-full  bg-transparent rounded-xl"
+                >
+                  {project.map((el, index) => (
+                    <SwiperSlide
+                      key={index}
+                      className="w-full rounded-2xl relative  bg-transparent h-96 swiper-slide-transform"
+                    >
+                      <img
+                        src={el.img}
+                        className="h-full w-full object-cover"
+                      />
+                      <h1
+                        className="font-[GT-America-Compressed-Medium] absolute text-white  text-center  left-0 right-0 bottom-0 text-4xl drop-shadow 
                       bg-gradient-to-b from-[#01020300] to-[#010203b1] py-10
                     "
-                    >
-                      <img src={el.icon} className="w-full" />
-                      <span>{el.title}</span>
-                    </h1>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-            <div className="w-10/12 m-auto sm:w-6/12 text-left text-white mt-6 sm:mt-0">
-              <Swiper className="w-full" onSwiper={setThumbsSwiper}>
-                {project.map((el, index) => (
-                  <SwiperSlide key={index} className="">
-                    <h1 className="font-[GT-America-Compressed-Medium] text-4xl  text-left">
-                      {el.title}
-                    </h1>
-                    <h2 className="text-left mt-2">
-                      {el.tips == "GameFi" && (
-                        <i className="px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
-                          {el.tips}
-                        </i>
-                      )}
-                      {el.tips == "NFT" && (
-                        <i className="px-3 py-1 not-italic bg-green-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
-                          {el.tips}
-                        </i>
-                      )}
-                      {el.tips == "Defi" && (
-                        <i className="px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
-                          {el.tips}
-                        </i>
-                      )}
-                      {el.tips == "Infra" && (
-                        <i className="px-3 py-1 not-italic bg-orange-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
-                          {el.tips}
-                        </i>
-                      )}
-                    </h2>
-                    <p className="font-[GT-America-Extended-Regular] mt-5  text-xs sm:text-base text-left text-white">
-                      {el.desc}
-                    </p>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                      >
+                        <img src={el.icon} className="w-full" />
+                        <span>{el.title}</span>
+                      </h1>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              <div className="w-10/12 m-auto sm:w-6/12 text-left text-white mt-6 sm:mt-0">
+                <Swiper className="w-full" onSwiper={setThumbsSwiper}>
+                  {project.map((el, index) => (
+                    <SwiperSlide key={index} className="">
+                      <h1 className="font-[GT-America-Compressed-Medium] text-4xl  text-left">
+                        {el.title}
+                      </h1>
+                      <h2 className="text-left mt-2">
+                        {el.tips == "GameFi" && (
+                          <i className="px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                            {el.tips}
+                          </i>
+                        )}
+                        {el.tips == "NFT" && (
+                          <i className="px-3 py-1 not-italic bg-green-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                            {el.tips}
+                          </i>
+                        )}
+                        {el.tips == "Defi" && (
+                          <i className="px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                            {el.tips}
+                          </i>
+                        )}
+                        {el.tips == "Infra" && (
+                          <i className="px-3 py-1 not-italic bg-orange-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                            {el.tips}
+                          </i>
+                        )}
+                      </h2>
+                      <p className="font-[GT-America-Extended-Regular] mt-5  text-xs sm:text-base text-left text-white">
+                        {el.desc}
+                      </p>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
             </div>
           </div>
-        </div>}
+        )}
       </main>
     </HeaderFooter>
   );

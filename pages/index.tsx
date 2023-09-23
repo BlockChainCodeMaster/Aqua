@@ -1003,13 +1003,10 @@ export default function Home() {
               modules={[Autoplay]}
             >
               <SwiperSlide>
-                <img src="/img1.jpeg" />
+                <img src="/img1.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/img2.jpeg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img3.jpeg" />
+                <img src="/img2.jpg" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -1028,13 +1025,10 @@ export default function Home() {
               modules={[Autoplay]}
             >
               <SwiperSlide>
-                <img src="/img4.jpeg" />
+                <img src="/img3.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/img5.jpeg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/img6.jpeg" />
+                <img src="/img4.jpg" />
               </SwiperSlide>
             </Swiper>
           </div>

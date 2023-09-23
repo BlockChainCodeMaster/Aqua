@@ -1106,12 +1106,10 @@ export default function Home() {
                       key={index}
                       className="w-full rounded-2xl relative  bg-transparent h-96 swiper-slide-transform"
                     >
-                      <a href={el.href} target="_blank">
-                        <img
-                          src={el.img}
-                          className="h-full w-full object-cover"
-                        />
-                      </a>
+                      <img
+                        src={el.img}
+                        className="h-full w-full object-cover"
+                      />
                       <h1
                         className="font-[GT-America-Compressed-Medium] absolute text-white  text-center  left-0 right-0 bottom-0 text-4xl drop-shadow 
                       bg-gradient-to-b from-[#01020300] to-[#010203b1] py-10
@@ -1134,20 +1132,18 @@ export default function Home() {
                     <SwiperSlide key={index} className="">
                       <h1 className="font-[GT-America-Compressed-Medium] text-4xl  text-left">
                         {el.title}
-                      </h1>
-                      <h2 className="text-left mt-2">
                         {el.tips == "GameFi" && (
-                          <i className="px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                          <i className="ml-2 px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
                             {el.tips}
                           </i>
                         )}
                         {el.tips == "NFT" && (
-                          <i className="px-3 py-1 not-italic bg-green-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                          <i className="ml-2 px-3 py-1 not-italic bg-green-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
                             {el.tips}
                           </i>
                         )}
                         {el.tips == "Defi" && (
-                          <i className="px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                          <i className="ml-2 px-3 py-1 not-italic bg-blue-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
                             {el.tips}
                           </i>
                         )}
@@ -1156,6 +1152,15 @@ export default function Home() {
                             {el.tips}
                           </i>
                         )}
+                      </h1>
+                      <h2 className="text-left mt-2">
+                        <a
+                          href={el.href}
+                          target="_blank"
+                          className="font-[GT-America-Extended-Regular]"
+                        >
+                          {el.href}
+                        </a>
                       </h2>
                       <p className="font-[GT-America-Extended-Regular] mt-5  text-xs sm:text-base text-left text-white">
                         {el.desc}

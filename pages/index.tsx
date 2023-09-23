@@ -1089,7 +1089,7 @@ export default function Home() {
                   cssMode={isMobile}
                   loop={true}
                   autoplay={{
-                    delay: 2500,
+                    delay: 10000,
                     disableOnInteraction: false,
                   }}
                   thumbs={{
@@ -1106,10 +1106,12 @@ export default function Home() {
                       key={index}
                       className="w-full rounded-2xl relative  bg-transparent h-96 swiper-slide-transform"
                     >
-                      <img
-                        src={el.img}
-                        className="h-full w-full object-cover"
-                      />
+                      <a href={el.href} target="_blank">
+                        <img
+                          src={el.img}
+                          className="h-full w-full object-cover"
+                        />
+                      </a>
                       <h1
                         className="font-[GT-America-Compressed-Medium] absolute text-white  text-center  left-0 right-0 bottom-0 text-4xl drop-shadow 
                       bg-gradient-to-b from-[#01020300] to-[#010203b1] py-10

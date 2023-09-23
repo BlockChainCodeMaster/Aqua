@@ -5,7 +5,7 @@ import logger from 'morgan'
 import router from './router/router'
 import bodyParser from 'body-parser'
 import cookieParser from "cookie-parser"
-const port = parseInt(process.env.PORT, 10) || 8000
+const port = parseInt(process.env.PORT, 10) || 8082
 const env = process.env.NODE_ENV
 const dev = env !== 'production'
 const app = next({

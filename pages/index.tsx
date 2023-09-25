@@ -1148,7 +1148,7 @@ export default function Home() {
                           </i>
                         )}
                         {el.tips == "Infra" && (
-                          <i className="px-3 py-1 not-italic bg-orange-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
+                          <i className="ml-2 px-3 py-1 not-italic bg-orange-500 rounded-md mr-2 font-[GT-America-Compressed-Medium] text-xl">
                             {el.tips}
                           </i>
                         )}

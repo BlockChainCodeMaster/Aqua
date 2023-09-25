@@ -244,7 +244,7 @@ export default function Home() {
       title: "Yuliverse",
       desc: "Yuliverse is an alternative reality metaverse that runs parallel to the physical world, offering a new kind of lifestyle through immersive gameplay and social interaction. With thousands of exciting storylines to explore, players can earn $ARG and $ART as they complete quests and assume different roles within the game.",
       tips: "GameFi",
-      href: "https://www.yuliverse.com/",
+      href: "https://yuliverse.com/",
       img: "/Yuliverse_img.png",
     },
     {
@@ -252,7 +252,7 @@ export default function Home() {
       title: "SkyArk",
       desc: "SkyArk Chronicles is a Triple A fantasy JRPG Game with Interoperable NFTs. The SkyArk Chronicles is a Trilogy of 2 GameFi(“House of Heroes” and “Legends Arise”) and 1 SocialFi Metaverse (“RE: SkyArkVerse”).",
       tips: "GameFi",
-      href: "https://www.skyarkchronicles.com/",
+      href: "https://skyarkchronicles.com/",
       img: "/Skyark_img.png",
     },
     {
@@ -284,7 +284,7 @@ export default function Home() {
       title: "Bounce Finance",
       desc: "On the way of pursuing a completely decentralized financial environment, the DeFi community has made tremendous progress by introducing elegant economic designs. I admire projects and individuals in the DeFi space and appreciate the architectures people built. I especially appreciate PlutusDefi’s bonding curve listing strategy and yearn.finance’s 5NO design (no founder’s allocation, no premise, no partnership allocation, no ICO, no advisor tokens), and it incentivized me to create bounce.finance. [Not as a job, but for fun. It is only an experiment so far.]",
       tips: "NFT",
-      href: "https://www.bounce.finance/",
+      href: "https://bounce.finance/",
       img: "/Bounce_img.png",
     },
 
@@ -293,7 +293,7 @@ export default function Home() {
       title: "Une Meta",
       desc: "UneMeta is a curated social and NFT market space for quality and established IPs and Icons, aiming to create higher quality experience with NFT to everyone. ",
       tips: "NFT",
-      href: "https://www.unemeta.com",
+      href: "https://unemeta.com",
       img: "/UneMeata_img.png",
     },
     {
@@ -349,7 +349,7 @@ export default function Home() {
       title: "EpiK Protocol",
       desc: "EpiK Protocol is an AI-first blockchain that aims at an open and collaborative AI data network accessible to all AI. It provides the infrastructure for community members to curate high-quality human-labeled AI training data and contribute to AI.",
       tips: "Infra",
-      href: "https://www.epik-protocol.io/",
+      href: "https://epik-protocol.io/",
       img: "/EpiK_img.png",
     },
     {
@@ -357,7 +357,7 @@ export default function Home() {
       title: "Chia Network",
       desc: "Chia is a cryptocurrency and blockchain with smart transaction capabilities. It was designed from the ground up to make cryptocurrency easier to use (and harder to lose) than cash. Its Proof of Space and Time is the only Nakamoto consensus algorithm since Proof of Work, while also having a much lower energy consumption. Part of Chia's vision involves improving the carbon footprint of the blockchain industry. Chia's mainnet was launched on March 19, 2021. Development of its ecosystem is ongoing, with primitives released for CATs, NFTs, Offers, and DIDs.",
       tips: "Infra",
-      href: "https://www.chia.net/",
+      href: "https://chia.net/",
       img: "/chia_img.png",
     },
   ]);

@@ -14,7 +14,7 @@ export default function Header() {
       href: "/#mission",
     },
     {
-      name: "Our Version",
+      name: "Our Vision",
       href: "/#version",
     },
     {

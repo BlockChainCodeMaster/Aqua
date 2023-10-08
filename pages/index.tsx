@@ -964,7 +964,7 @@ export default function Home() {
           }}
         />
         <div className=" fixed left-0 top-0 bottom-0 right-0 opacity-40 -z-10 bg-gradient-to-b from-[#18203d] to-[#030348]"></div>
-        <div className="pt-14 pb-24 sm:pt-28 sm:pb-48 text-center text-white ">
+        <div className="pb-24 text-center text-white pt-14 sm:pt-28 sm:pb-48 ">
           <h1 className=" font-[GT-America-Extended-Black] uppercase text-5xl sm:text-8xl drop-shadow py-8">
             Aqua Labs
           </h1>
@@ -979,21 +979,21 @@ export default function Home() {
         </div>
         <div
           id="mission"
-          className=" flex-col sm:flex-row flex  w-10/12 sm:w-10/12 gap-2 justify-between text-white mx-auto my-0 sm:my-20"
+          className=" h-96 flex flex-col justify-between w-10/12 gap-2 mx-auto my-0 text-white  sm:flex-row sm:w-10/12 sm:my-10"
         >
-          <div className="w-10/12 sm:w-5/12">
-            <h1 className="font-[GT-America-Bold] text-4xl sm:text-6xl uppercase mt-12">
+          <div className="w-10/12 sm:w-7/12">
+            <h1 className="font-[GT-America-Bold] text-4xl sm:text-6xl uppercase mt-2">
               Our Mission
             </h1>
             <p className=" font-[GT-America-Extended-Regular]  mt-4 sm:mt-8 ">
               Help{" "}
-              <b className=" text-blue-400 text-2xl">
+              <b className="text-2xl text-blue-400 ">
                 <NumberScroller to={100} timeout={1000} />+
               </b>{" "}
               partners with dreams to fulfill their entrepreneurial goals.
             </p>
           </div>
-          <div className="w-full sm:w-7/12 rounded-lg drop-shadow overflow-hidden mt-4 sm:mt-0">
+          <div className="w-full mt-4 overflow-hidden rounded-lg sm:w-5/12 drop-shadow sm:mt-0">
             <Swiper
               loop={true}
               autoplay={{
@@ -1008,14 +1008,65 @@ export default function Home() {
               <SwiperSlide>
                 <img src="/img2.jpg" />
               </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img3.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img4.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img5.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img6.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img7.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img8.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img9.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img10.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img11.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img12.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img13.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img14.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img15.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img16.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img17.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img18.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img19.jpg" />
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
         <div
           id="version"
-          className="flex-co flex-col-reverse sm:flex-row flex w-10/12 gap-2 justify-between text-white mx-auto mb-10 sm:my-20"
+          className=" h-96 flex flex-col-reverse justify-between w-10/12 gap-2 mx-auto mb-2 text-white flex-co sm:flex-row sm:my-10"
         >
-          <div className="w-full sm:w-7/12 rounded-lg drop-shadow overflow-hidden ">
+          <div className="w-full overflow-hidden rounded-lg sm:w-5/12 drop-shadow ">
             <Swiper
               loop={true}
               autoplay={{
@@ -1025,15 +1076,51 @@ export default function Home() {
               modules={[Autoplay]}
             >
               <SwiperSlide>
-                <img src="/img3.jpg" />
+                <img src="/img20.jpg" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/img4.jpg" />
+                <img src="/img21.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img22.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img23.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img24.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img25.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img27.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img28.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img29.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img30.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img31.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img32.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img33.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img34.jpg" />
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className="w-full sm:w-5/12 text-left sm:text-right mt-4 sm:mt-0 mb-4 sm:mb-0">
-            <h1 className="font-[GT-America-Bold] text-4xl sm:text-6xl uppercase mt-12">
+          <div className="w-full mt-4 mb-4 text-left sm:w-7/12 sm:text-right sm:mt-0 sm:mb-0">
+            <h1 className="font-[GT-America-Bold] text-4xl sm:text-6xl uppercase mt-4">
               Our Vision
             </h1>
             <p className=" font-[GT-America-Extended-Regular] mt-4 sm:mt-8">
@@ -1042,7 +1129,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div id="why_us" className="mb-16 text-center ">
+        <div id="why_us" className="mb-10 mt-12 text-center ">
           <h1 className=" font-[GT-America-Bold]  text-4xl sm:text-6xl text-white drop-shadow-md uppercase">
             Why Us?
           </h1>
@@ -1073,17 +1160,17 @@ export default function Home() {
         {showProject && (
           <div
             id="projects"
-            className="pb-10 sm:pb-20 mt-0 sm:mt-16 text-center overflow-hidden"
+            className="pb-10 mt-0 overflow-hidden text-center sm:pb-20 sm:mt-16"
           >
             <h1 className=" font-[GT-America-Bold]  text-4xl sm:text-6xl text-white drop-shadow-md uppercase">
               Project Case
             </h1>
-            {/* <h2 className="text-sm text-white opacity-50">
-          Spline is constantly growing just like the possibilities of what you
-          can achieve.
-        </h2> */}
-            <div className=" w-10/12 sm:w-8/12 mx-auto flex  flex-col sm:flex-row justify-between my-4 sm:my-20">
-              <div className="w-10/12 sm:w-4/12 mx-auto h-96 sm:h-auto">
+            <h2 className=" text-lg text-white font-[GT-America-Extended-Regular] mt-6">
+              We have experienced three crypto cycles and have invested in and
+              incubated 100+ projects.
+            </h2>
+            <div className="flex flex-col justify-between w-10/12 mx-auto my-4  sm:w-8/12 sm:flex-row sm:my-20">
+              <div className="w-10/12 mx-auto sm:w-4/12 h-96 sm:h-auto">
                 <Swiper
                   // effect={"cards"}
                   cssMode={isMobile}
@@ -1104,11 +1191,11 @@ export default function Home() {
                   {project.map((el, index) => (
                     <SwiperSlide
                       key={index}
-                      className="w-full rounded-2xl relative  bg-transparent h-96 swiper-slide-transform"
+                      className="relative w-full bg-transparent rounded-2xl h-96 swiper-slide-transform"
                     >
                       <img
                         src={el.img}
-                        className="h-full w-full object-cover"
+                        className="object-cover w-full h-full"
                       />
                       <h1
                         className="font-[GT-America-Compressed-Medium] absolute text-white  text-center  left-0 right-0 bottom-0 text-4xl drop-shadow 
@@ -1122,7 +1209,7 @@ export default function Home() {
                   ))}
                 </Swiper>
               </div>
-              <div className="w-10/12 m-auto sm:w-6/12 text-left text-white mt-6 sm:mt-0">
+              <div className="w-10/12 m-auto mt-6 text-left text-white sm:w-6/12 sm:mt-0">
                 <Swiper
                   className="w-full"
                   onSwiper={setThumbsSwiper}
@@ -1153,11 +1240,11 @@ export default function Home() {
                           </i>
                         )}
                       </h1>
-                      <h2 className="text-left mt-2">
+                      <h2 className="mt-2 text-left">
                         <a
                           href={el.href}
                           target="_blank"
-                          className="font-[GT-America-Extended-Regular]"
+                          className="font-[GT-America-Extended-Regular] text-base"
                         >
                           {el.href}
                         </a>
